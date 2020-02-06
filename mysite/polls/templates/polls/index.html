@@ -1,11 +1,5 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
+    {% load static %}
+    <link rel="stylesheet", type="text/css", href="{% static 'polls/style.css' %}">
     {% if latest_question_list %}
     <ul>
       {% for question in latest_question_list %}
@@ -15,5 +9,3 @@
     {% else %}
     <p>No polls are available.</p>
     {% endif %}
-  </body>
-</html>
